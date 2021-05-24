@@ -1,0 +1,66 @@
+// STYLE CONTAINER PAYMENTS 
+.container{
+    .promo_box{
+        text-align: center;
+        margin: 10px 0px 10px;
+    }
+    h5{
+        margin: 10px 0px 10px;
+    }
+    .promo_title{
+        color: #32C69A;
+    }
+    .btn_myColor{
+        background-color: #32C69A;
+        color: white;
+        &:hover{
+            box-shadow: 5px 5px #32c69a54;
+        }
+    }
+}
+.promo_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    .promo_id{
+        flex-basis: 300px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        padding: 10px;
+        border: 1px solid #32C69A;
+        &:hover{
+            cursor: pointer;
+        }
+        .standard{
+            color: rgb(184, 115, 51);
+        }
+        .premium{
+            color: rgb(192,192,192);
+        }
+        .gold{
+            color: 	rgb(255,215,0);
+        }
+    }
+    .standard_box{
+        &:hover{
+            box-shadow:7px 7px 7px rgb(184, 115, 51);
+        }
+    }
+    .premium_box{
+        &:hover{
+            box-shadow:7px 7px 7px rgb(192,192,192);
+        }
+    }
+    .gold_box{
+        &:hover{
+            box-shadow:7px 7px 7px rgb(255,215,0);
+        }
+    }
+}
+
+.check-img{
+    img{
+        width: 150px;
+    }
+}

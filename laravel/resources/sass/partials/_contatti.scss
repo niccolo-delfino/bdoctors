@@ -1,0 +1,49 @@
+contatti{
+  background-image: url('https://www.doctorshop.it/images/banner/contatti-1040.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.campi_contatti input,
+.campi_contatti textarea{
+  background-color: #e5ecf1;
+  border-radius: 0;
+  border: 0;
+}
+
+.campi_contatti input:hover,
+.campi_contatti textarea:hover{
+  border-left: 5px solid #32C69A;
+}
+.campi_contatti input:focus,
+.campi_contatti textarea:focus{
+  border-left: 5px solid #32C69A;
+  background-color: #e5ecf1;
+  box-shadow: 0px 0px 7px 6px rgba(50,198,154,0.48);
+}
+.plc {
+    width: 300px;
+}
+.plc2 {
+    height: 100px;
+    width: 600px;
+}
+.pd {
+    padding-bottom: 30px;
+}
+
+.campi_contatti .btn{
+  color: white;
+  border-radius: 0;
+  background-color: #32C69A;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .plc2 {
+        height: 100px;
+        width: 300px;
+    }
+}

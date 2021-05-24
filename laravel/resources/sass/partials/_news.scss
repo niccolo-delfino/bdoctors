@@ -1,0 +1,153 @@
+.blogs button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 6px 12px;
+    line-height: 1;
+    background-color: transparent;
+    border: 2px solid #2a2a2a;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: 0.1s;
+    outline: 0;
+  }
+  .blogs button:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  .blogs button .fa {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .blogs button.btn-primary {
+    border-color: #042A4F;
+    color: #042A4F;
+  }
+  .blogs button.btn-primary:hover {
+    background-color: #042A4F;
+    color: #fff;
+  }
+  .blogs button.btn-accent {
+    border-color: #36a68e;
+    color: #36a68e;
+  }
+  .blogs button.btn-accent:hover {
+    background-color: #36a68e;
+    color: #fff;
+  }
+  
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  @media (max-width: 1140px) {
+    .blogs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .blogs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .blog_image {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+  }
+  .blog_image:before, .blog_image:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blog_image:before {
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1);
+    filter: blur(0);
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+  }
+  .blog_image:after {
+    background: linear-gradient(30deg, #042A4F 0%, #E65891 100%);
+    background-size: 100% 300%;
+    background-position: bottom left;
+    opacity: 0.15;
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+  }
+  .blog_image-1:before {
+    background-image: url("https://i.pinimg.com/originals/ad/f5/6c/adf56ca34c566e8f27f7877a14876f08.jpg");
+  }
+  .blog_image-2:before {
+    background-image: url("https://www.tuv.com/content-media-files/master-content/services/industrial-services/i07-project-management/1870-cyber-security-for-medical-devices-and-systems/tuv-rheinland-cyber-security-for-medical-shutterstock_1701221323_core_2_2_1.jpg");
+  }
+  .blog_image-3:before {
+    background-image: url("https://eduplanner.pl/wp-content/uploads/2018/08/hunters-race-408744-unsplash-1200x675.jpg");
+  }
+  .blog_image-4:before {
+    background-image: url("https://www.hotelalgamilano.it/sites/alga2torri.gisnet.it/files/Hotel_Santa_Barbara_Milano_01t.jpg");
+  }
+  .blog_image-5:before {
+    background-image: url("https://res.cloudinary.com/upskilled/image/fetch/w_660,h_440,c_crop,c_fill,g_face:auto,f_auto/https://www.upskilled.edu.au/getmedia%2F334abc45-b457-44fd-98ff-691e19ee68b9%2Fcareer-paths-for-people-who-enjoy-teamwork-HERO.jpg%3B.aspx%3Fwidth%3D1000%26height%3D667%26ext%3D.jpg");
+  }
+  .blog_image-6:before {
+    background-image: url("https://media.istockphoto.com/photos/back-view-group-of-children-running-in-nature-picture-id979504172?k=6&m=979504172&s=612x612&w=0&h=kViMkSdG-52h9cX3B76LYdMNJNYn4barUJjm4hsOLRg=");
+  }
+  .blog_content {
+    margin: -50px 25px 0;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.15);
+    transition: margin 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .blog_inside {
+    overflow: hidden;
+    height: 80px;
+    transition: height 0.2s ease-in-out;
+  }
+  .blog_titolo {
+    font-size: 22px;
+    line-height: 1;
+    margin: 0 0 16px;
+    color: #042A4F;
+  }
+  .blog_testo {
+    line-height: 1.3;
+    overflow: hidden;
+    margin: 0;
+    max-height: 100px;
+    position: relative;
+  }
+  .blog_button {
+    margin-top: 16px;
+  }
+  
+  /* ====== HOVER ====== */
+  .blog:hover .blog_content {
+    margin-top: -155px;
+  }
+  .blog:hover .blog_inside {
+    height: 190px;
+  }
+  .blog:hover .blog_image:after {
+    opacity: 0.5;
+  }
+  .blog:hover .blog_image:before {
+    transform: scale(1.1);
+    filter: blur(10px);
+  }
+  

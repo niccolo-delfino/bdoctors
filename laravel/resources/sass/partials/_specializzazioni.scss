@@ -1,0 +1,185 @@
+.mini_jumbotron{
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-position: bottom;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://www.inghammedical.com.au/wp-content/uploads/2017/04/doctors.jpg);
+}
+
+.mini_jumbotron_black{
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+
+.mini_jumbotron_title>h3{
+  padding: 10px 20px;
+  color: white;
+  display: inline;
+  background-color: #32c69a;
+}
+
+
+// SEZIONE
+.section_title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section_title h3{
+  padding-bottom: 10px;
+}
+
+.rami_boxes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rami_boxes .rami_left{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rami_box{
+  width: calc(100% / 2 - 40px);
+  padding: 15px;
+  margin: 0 20px;
+}
+
+.rami_box:hover{
+  background-color: #eeeeee;
+}
+
+.rami_titolo{
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.rami_box span{
+  font-weight: bold;
+  color: #32c69a;
+}
+
+.rami_box p{
+  line-height: 1.6;
+}
+
+.rami_titolo img{
+  height: 50px;
+  padding-right: 20px;
+}
+
+.rami_right{
+  width: 30%;
+}
+.rami_right .images{
+  width: 100%;
+}
+
+.sp_boxes{
+  display: flex;
+  line-height: 2;
+}
+.sp_box{
+  width: calc(100% / 3);
+  height: 530px;
+  background-position: center;
+}
+.sp_box.vision{
+  background-image: url(https://post.healthline.com/wp-content/uploads/2020/08/Doctors_For_Men-732x549-thumbnail-1-732x549.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sp_box.center{
+  background-image: url(https://skindoctors.it/images/43/bg-derm-chirurgica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sp_box.mission{
+  background-image: url(https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.sp_overlay{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.sp_box .box_title{
+  padding-bottom: 40px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .specialization_square .sp_boxes{
+    flex-wrap: wrap;
+  }
+
+  .specialization_square .sp_boxes .sp_box{
+    width: 100%;
+  }
+
+  // .specialization_square .sp_boxes .sp_box .sp_overlay .box_title h2{
+  //   font-size: 50px;
+  // }
+  // .specialization_square .sp_boxes .sp_box .sp_overlay .box_text{
+  //   font-size: 30px;
+  // }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .rami_boxes{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .rami_box{
+    width: 40%;
+  }
+
+  .rami_box.busta{
+    width: 100%;
+  }
+
+  .rami_boxes .rami_left{
+    width: 100%;
+  }
+
+  .rami_right{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .rami_boxes{
+    flex-wrap: wrap;
+  }
+
+  .rami_box{
+    width: 100%;
+  }
+}

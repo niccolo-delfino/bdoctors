@@ -1,0 +1,296 @@
+@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+.papaya{
+  background: #eee;
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  height: 480px;
+  padding:40px 0px;
+}
+#scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+section #scene #left-zone {
+  background: #fff;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+section #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+section #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+  text-transform: uppercase;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label.label_ramouno:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url('../../img/logo_mini_green.png');
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label.label_ramodue:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url('../../img/logo_mini_green.png');
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label.label_ramotre:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url('../../img/logo_mini_green.png');
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label.label_ramoquattro:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url('../../img/logo_mini_green.png');
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ label.label_ramocinque:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url('../../img/logo_mini_green.png');
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramouno .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url('../../img/sport.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramouno h1 {
+  color:#32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramodue .picto {
+  height: 70px;
+  width: 70px;
+  background-image: url('../../img/ginecologia.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramodue h1 {
+  color: #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramotre .picto {
+  height: 70px;
+  width: 70px;
+  background-image: url('../../img/psichiatria.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramotre h1 {
+  color: #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramoquattro .picto {
+  height: 70px;
+  width: 70px;
+  background-image: url('../../img/pediatria.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramoquattro h1 {
+  color: #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramocinque .picto {
+  height: 70px;
+  width: 70px;
+  background-image: url('../../img/cardiologia.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content.content_ramocinque h1 {
+  color: #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
+  text-transform: uppercase;
+}
+section #scene #left-zone .list li.item input[type=radio] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_ramouno {
+  color: #32c69a;
+  border-right: solid 4px #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_ramodue {
+  color: #32c69a;
+  border-right: solid 4px #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_ramotre {
+  color: #32c69a;
+  border-right: solid 4px #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_ramoquattro {
+  color: #32c69a;
+  border-right: solid 4px #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_ramocinque {
+  color: #32c69a;
+  border-right: solid 4px #32c69a;
+}
+section #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+section #scene #middle-border {
+  background-color: #eee;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+section #scene #right-zone {
+  background: #fff;
+  height: 100%;
+  flex-grow: 3;
+}
+
+.item{
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  section.papaya {
+    display: none;
+  }
+}

@@ -1,0 +1,158 @@
+// @include flex(row,flex-start,center);
+footer{
+
+  .sfondo{
+    height: 400px;
+    width: 100%;
+    position: relative;
+      img{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.9;
+      }
+    .contenitore{
+      @include flex(row,center,center);
+      height: 400px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+
+      .conta{
+        @include flex(row,center,space-between);
+        .sx{
+          width: 35%;
+        }
+        .cc{
+          width: 35%;
+          // padding-top: 2%;
+        }
+        .dx{
+          @include flex(column,center,center);
+          width: 27%;
+        }
+        .box{
+          @include flex(column,start,flex-start);
+
+          .social li{
+            display: inline;
+            font-size: 25px;
+            padding-right: 20px;
+            a{
+              color: white;
+            }
+          }
+
+          .prima_row ,{
+            @include flex(row,flex-start,center);
+            width: 100%;
+            .form-group{
+              padding-right: 5px;
+            }
+          }
+
+          .iscriviti{
+            @include flex(row,center,center);
+            height: 100px;
+            width: 100%;
+            border: 3px solid white;
+            background-color: #192129;
+          }
+          .tipa{
+            height: 100px;
+            filter: none;
+            object-fit: contain;
+          }
+          .slogan{
+            @include flex(column,center,center);
+            width: 100%;
+            margin-right: 6%;
+            span{
+              font-size: 20px;
+            }
+            button:hover {
+              transform: scale(1.1);
+            }
+            a{
+              color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .endpage{
+      height: 70px;
+      background-color: #010a12;
+      opacity: 0.9;
+      color: white;
+      .contenuto {
+        @include flex(row,flex-start,space-between);
+        .nav_footer_sx , .nav_footer_dx , .nav_footer_cc{
+          @include flex(row,center,center);
+          height: 70px;
+          ul , p{
+          margin-bottom: 0px;
+            li {
+              display: inline;
+              padding-right: 20px;
+            }
+          }
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+    }
+    #logo{
+      height: 70px;
+      width: 300px;
+      object-position: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .sfondo .contenitore .prova.container .conta .box.dx .iscriviti .slogan span{
+    display: none
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sfondo .contenitore .prova.container .conta {
+    flex-wrap: wrap;
+  }
+
+  .sfondo .contenitore .prova.container .conta .box{
+    width: 100%;
+  }
+  .sfondo .contenitore .prova.container .conta .box.cc{
+    display: none;
+  }
+
+  .sfondo .contenitore .prova.container .conta .box.dx .iscriviti .slogan span{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px){
+  footer .sfondo .endpage{
+    height: 210px;
+    background-color: #010a12;
+    opacity: 0.9;
+    width: 100%;
+  }
+  .endpage .contenuto.container {
+    flex-wrap: wrap;
+  }
+  .endpage .contenuto.container .nav_footer_sx,
+  .endpage .contenuto.container .nav_footer_cc,
+  .endpage .contenuto.container .nav_footer_dx{
+    width: 100%;
+  }
+}

@@ -1,0 +1,621 @@
+.img-size{
+    width: 200px;
+}
+
+.pdf-size{
+    width: 350px;
+    height: 500px;
+}
+
+.container-check{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_log{
+    display: flex;
+    .box_dashBoard{
+        height: 200px;
+        padding: 10px;
+        margin: 10px;
+        border-right: 1px solid blue;
+        ul{
+            list-style: none;
+            li{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// DASHBOARD
+// nuovo codice
+
+.mc-dash {
+  color: rgb(180, 180, 180)!important;
+  i {
+    margin-right: 5px;
+    color: rgb(180, 180, 180)!important;
+  }
+  &:hover {
+    opacity: .8;
+    transition: .5s;
+  }
+}
+
+.mc-dash.active {
+  color: white!important;
+  transition: all .5s;
+  &:hover {
+    opacity: .8;
+  }
+  i {
+    color: white!important;
+  }
+}
+
+
+// USER INDEX
+.mc-user.container {
+    max-width: 100%;
+}
+
+img.mc-user {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+a.mc-edit-btn,
+button.mc-edit-btn {
+    background-color: #32c69a;
+    border: 1px solid #32c69a;
+    color: white;
+    transition: all .3s;
+    &:hover {
+        background-color: #32c69a;
+        border: 1px solid #32c69a;
+        color: white;
+        opacity: 0.8;
+    }
+}
+
+.fa-address-card.mc-user {
+    font-size: 22px;
+}
+
+.mc-user-cv a {
+    color: #32c69a;
+    transition: all .3s;
+    &:hover {
+        color: #2a2e32!important;
+        text-decoration: none;
+    }
+}
+
+.progress-bar.mc-user {
+    background-color: #32c69a!important;
+}
+
+nav.main-breadcrumb .breadcrumb {
+    background-color: #f8f9fa!important;
+}
+
+li.breadcrumb-item a {
+    color: #32c69a!important;
+}
+
+h4 span.mc-user {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.mc-user.mc-btn-edit {
+    color: #32c69a!important;
+    &:hover {
+        opacity: .8!important;
+        text-decoration: none!important;
+    }
+}
+
+.mc-user.mc-btn-del, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.mc-user.mc-btn-del:hover {
+    color: red;
+}
+
+    // PROFILE EDIT
+.mc-user.dropdown-menu {
+    height: 140px;
+    overflow-y: auto;
+}
+
+// USER INDEX
+.mc-user.card-body {
+    height: 250px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    // border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border: none!important;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+    background-color: rgba(50, 198, 154, 1);
+    border-radius: 5px;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front {
+    background-size: cover;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    background-repeat: no-repeat;
+}
+
+.flip-card-front.mc-card1 {
+    background-image: url('../../img/doctor.png');
+    border: 1px solid rgba(50, 198, 154, 1);
+}
+
+.flip-card-front.mc-card2 {
+    background-image: url('../../img/chat.png');
+    background-size: 60%;
+    background-position: center;
+    border: 1px solid rgba(50, 198, 154);
+}
+
+.flip-card-front.mc-card3 {
+    background-image: url('../../img/review.png');
+    background-size: 60%;
+    background-position: center;
+    border: 1px solid rgba(50, 198, 154);
+}
+
+.flip-card-front.mc-card4 {
+    background-image: url('../../img/loudspeaker.png');
+    background-size: 60%;
+    background-position: center;
+    border: 1px solid rgba(50, 198, 154);
+}
+
+.card-body.mc-no-border {
+  border: none;
+  .mc-card5 {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+.flip-card-front.mc-card5 {
+    background-image: url('../../img/growth.png');
+    background-size: 30%;
+    background-position: 85% 50%;
+    position: relative;
+}
+
+
+.mc-text-lastcard {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.mc.flipcard {
+    position: relative;
+}
+
+.mc-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// nuovo codice
+.mc-container-card-mobile {
+  border: none;
+}
+
+.mc-card-mobile {
+  background-color: #f8f9fa;
+  border: 2px solid #32c69a;
+  border-radius: 5px;
+  .mc-text {
+    color: #1f1f1f;
+  }
+}
+
+@media screen and (max-width: 991px) {
+    .mc-user.mc-mt {
+        margin-top: 10px;
+    }
+}
+
+.mc-doctor-img {
+  width: 100%;
+}
+
+.mc-doctor-card {
+  width: 250px;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #32c69a;
+  transition: all .5s;
+  position: relative;
+  &:hover {
+    border: 4px solid #32c69a;
+  }
+  .mc-doctor-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 33px;
+    height: 33px;
+    background-color: #32c69a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s;
+    color: white;
+    text-decoration: none;
+  }
+  &:hover .mc-doctor-details {
+    opacity: 1;
+  }
+}
+
+// STRIPE
+.panel-title {
+    display: inline;
+    font-weight: bold;
+    }
+    .display-table {
+        display: table;
+    }
+    .display-tr {
+        display: table-row;
+    }
+    .display-td {
+        display: table-cell;
+        vertical-align: middle;
+        width: 61%;
+    }
+// STRIPE
+
+// NICCOLO'
+.banner{
+    // background-color: rgba(50, 198, 144, 0.282);
+    background-image: url(https://picjumbo.com/wp-content/uploads/young-woman-workingtyping-on-her-laptop-1570x1047.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+  }
+  .banner .black{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .banner_button {
+    width: 160px;
+    height: 54px;
+    margin-top: 20px;
+    background: rgb(50, 198, 154);
+    // align-self: center;
+  }
+
+  .banner_title{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+  }
+
+  .banner_subtitle{
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+  }
+
+  .banner_container{
+    padding: 50px 0;
+  }
+
+  .button a span {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .intro h6{
+    padding-bottom: 10px;
+  }
+
+  .intro_right{
+    padding-left: 40px;
+  }
+
+  .intro li{
+    margin-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .intro .img{
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://ranchocarne.org/wp-content/uploads/2020/12/health-insurance-getty-imag-2.jpg);
+  }
+
+// NICCOLO' FINE
+
+
+
+// DOTTORI LATO VISITATORE
+// DASHBOARD
+
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+.total-like {
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+.rating-list {
+    display: inline-flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.rating-list-left {
+    height: 16px;
+    line-height: 29px;
+    width: 10%;
+}
+.rating-list-center {
+    width: 80%;
+}
+.rating-list-right {
+    line-height: 29px;
+    text-align: right;
+    width: 10%;
+}
+.restaurant-slider-pics {
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px;
+}
+.restaurant-slider-view-all {
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+.offer-dedicated-nav .nav-link.active,
+.offer-dedicated-nav .nav-link:hover,
+.offer-dedicated-nav .nav-link:focus {
+    border-color: #3868fb;
+    color: #3868fb;
+}
+.offer-dedicated-nav .nav-link {
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    padding: 16px 0;
+    font-weight: 600;
+}
+.offer-dedicated-nav .nav-item {
+    margin: 0 37px 0 0;
+}
+.restaurant-detailed-action-btn {
+    margin-top: 12px;
+}
+.restaurant-detailed-header-right .btn-success {
+    border-radius: 3px;
+    height: 45px;
+    margin: -18px 0 18px;
+    min-width: 130px;
+    padding: 7px;
+}
+.text-black {
+    color: #000000;
+}
+.icon-overlap {
+    bottom: -23px;
+    font-size: 74px;
+    opacity: 0.23;
+    position: absolute;
+    right: -32px;
+}
+.menu-list img {
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+}
+.restaurant-detailed-header-left img {
+    width: 88px;
+    height: 88px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+.reviews-members .media .mr-3 {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+.rounded-pill {
+    border-radius: 50rem!important;
+}
+.total-like-user {
+    border: 2px solid #fff;
+    height: 34px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    width: 34px;
+}
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+.total-like {
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+.rating-list {
+    display: inline-flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.rating-list-left {
+    height: 16px;
+    line-height: 29px;
+    width: 10%;
+}
+.rating-list-center {
+    width: 80%;
+}
+.rating-list-right {
+    line-height: 29px;
+    text-align: right;
+    width: 10%;
+}
+.restaurant-slider-pics {
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px;
+}
+
+.restaurant-slider-view-all {
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+
+// nuovo codice
+.fa-star.mc-reviews {
+  color: #FFA41C;
+}
+
+.mc-reviews.media {
+  position: relative;
+  form {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+}
+
+.mc-reviews-text p {
+  color: #6C6E63;
+  font-size: 14px;
+}
+
+img.mc-user {
+  object-fit: cover!important;
+  object-position: top!important;
+}
+
+.box_card_doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+#check{
+  padding: 40px 0;
+}

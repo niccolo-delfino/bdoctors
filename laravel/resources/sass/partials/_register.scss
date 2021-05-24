@@ -1,0 +1,55 @@
+.marketing{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    position: relative;
+  
+    .prima_img{
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+      img{
+        height: 500px;
+        width: 400px;
+      }
+    }
+  
+    .testo{
+      display: flex;
+      flex-direction: column;
+      h5{
+        color: #8c8c8c;
+        span{
+          color: #32c69a;
+        }
+      }
+      h2{
+        font-size: 50px;
+        color:#32c69a;
+      }
+      p{
+        line-height: 1.6;
+        color: #8c8c8c;
+      }
+      a{
+        text-decoration: none;
+        color: #32c69a;
+        i{
+          padding-left: 5px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .video{
+      z-index: 2;
+      display: flex;
+    }
+  
+    .immagine{
+      height: 400px;
+      width: 800px;
+      background-image: url('https://jooinn.com/images/medical-team-4.jpg');
+      background-position: center;
+      background-size: cover;
+      }
+  }

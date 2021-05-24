@@ -1,0 +1,126 @@
+.chiSiamo{
+  background-position: center;
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4E1BAQEAU9eja-d7XA/company-background_10000/0/1519801580283?e=2159024400&v=beta&t=fsWP9y49PjzWiVzXw8STjq_8yJ8i578xsJfgaKJjMjA);
+}
+.section_title{
+    text-align: center;
+  }
+
+  .about_boxes{
+    display: flex;
+  }
+
+  .about_box{
+    width: calc(100% / 3);
+    padding: 20px;
+  }
+
+  .about_box span{
+    font-weight: bold;
+    color: #32c69a;
+  }
+
+  .about_box_img{
+    width: 290px;
+    height: 350px;
+    background-position: center;
+    background-image: url(https://antoniodalpoggetto.it/wp-content/uploads/2014/05/doctor-1.jpg);
+  }
+
+  section.counter{
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #F5F6F8;
+  }
+
+  .overlay>.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .counter_box{
+    width: 222px;
+    height: 80px;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .counter_box i{
+    font-size: 65px;
+    padding-right: 20px;
+    color: #32c69a;
+  }
+
+  .counter_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .counter_numero{
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .counter_text{
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 992px) {
+
+    .overlay>.container{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .counter_box{
+      width: 222px;
+      margin-right: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 992px) {
+
+    section.counter{
+      height: 350px;
+    }
+
+    .about_boxes{
+      flex-wrap: wrap;
+    }
+
+    .about_box{
+      width: 100%;
+    }
+
+    .about_box_img{
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 513px) {
+
+    section.counter{
+      height: 600px;
+    }
+
+  }
